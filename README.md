@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Placementmodule
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# placementmodule
+This is a Placement Management System designed to streamline the campus recruitment process. The application leverages Angular for the frontend to provide a user-friendly, responsive interface, while Spring Boot powers the backend for a robust and scalable server environment.
+>>>>>>> 075ab01e0a0e406822c6eae23bdb68e6af09585c
