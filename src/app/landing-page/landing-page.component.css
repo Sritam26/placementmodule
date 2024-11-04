@@ -1,0 +1,73 @@
+#introimage{
+
+}
+.posterpart{
+  display: flex;
+  padding-top: 10px;
+}
+.posterpart h1{
+
+  padding-top: 60px;
+  padding-left: 82px;
+}
+.contactus{
+  margin: 35px 190px;
+  border-radius: 10px;
+}
+.logo{
+  margin:0px 176px;
+  height: 40vh;
+  width: 15vw;
+}
+/* Slider container */
+.slider {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(212, 223, 223);
+}
+
+/* Track for sliding images */
+.slide-track {
+  display: flex;
+  width: calc(300px * 12); /* Double the number of images for looping */
+  animation: scroll 32s linear infinite;
+}
+
+/* Individual slides */
+.slide {
+  width: 300px; /* Adjust width of each image */
+  height: 200px; /* Adjust height */
+  margin-right: 10px;
+}
+
+.slide img {
+  width: 18vw;
+  height: 25vh;
+  margin: 16px 0px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.coordinators{
+    display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.cardstyle:hover{
+
+  border: 2px solid red;
+ 
+}
