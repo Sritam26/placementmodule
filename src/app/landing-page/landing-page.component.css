@@ -1,73 +1,111 @@
-#introimage{
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
 
-}
-.posterpart{
+.posterpart {
   display: flex;
-  padding-top: 10px;
-}
-.posterpart h1{
-
-  padding-top: 60px;
-  padding-left: 82px;
-}
-.contactus{
-  margin: 35px 190px;
-  border-radius: 10px;
-}
-.logo{
-  margin:0px 176px;
-  height: 40vh;
-  width: 15vw;
-}
-/* Slider container */
-.slider {
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: rgb(212, 223, 223);
+  padding: 20px;
 }
 
-/* Track for sliding images */
+.posterpart h1 {
+  padding: 20px;
+  font-size: 36px;
+  color: #003366;
+}
+
+.contactus {
+  background-color: #ff5733;
+  border: none;
+}
+
+.logo {
+  width: 150px;
+}
+
+#introimage {
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* Slider styles */
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: -102px;
+  height: 74vh;
+}
+
 .slide-track {
   display: flex;
-  width: calc(300px * 12); /* Double the number of images for looping */
-  animation: scroll 32s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
-/* Individual slides */
 .slide {
-  width: 300px; /* Adjust width of each image */
-  height: 200px; /* Adjust height */
-  margin-right: 10px;
+  min-width: 100%;
+  margin-top: 10%;
+  min-height: 50%;
 }
 
 .slide img {
-  width: 18vw;
-  height: 25vh;
-  margin: 16px 0px;
+  width: 48%;
+  border-radius: 10px;
 }
 
+/* Coordinator card styles */
+.cardstyle {
+  transition: transform 0.3s;
+}
+
+.cardstyle:hover {
+  transform: scale(1.05);
+}
+
+.coordinators {
+  margin: 20px 0;
+}
+
+/* Placement statistics */
+.placement {
+  background-color: #003366;
+  padding: 40px;
+  color: white;
+}
+
+.placementcount {
+  display: inline-block;
+  margin: 20px;
+}
+
+/* Recruiter slider styles */
+.ourrecruitors {
+  margin: 40px 0;
+}
+
+.recruitor_slider {
+  overflow: hidden;
+}
+
+.recruitor_slide-track {
+  display: flex;
+  animation: scroll 10s linear infinite;
+}
+
+.slide1 {
+  min-width: 200px;
+  margin: 0 20px;
+}
+
+.slide1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Keyframes for animation */
 @keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.coordinators{
-    display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-}
-
-.cardstyle:hover{
-
-  border: 2px solid red;
- 
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }

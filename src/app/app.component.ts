@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { StudentregistrationComponent } from './studentregistration/studentregistration.component';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,LoginComponent,StudentregistrationComponent],
+  imports: [RouterOutlet, FormsModule], // Include FormsModule here
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrected from styleUrl to styleUrls
 })
 export class AppComponent {
   title = 'placementmodule';

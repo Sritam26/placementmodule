@@ -1,0 +1,33 @@
+<div class="main">
+  <section class="signup">
+    <div class="container">
+      <div class="signup-content">
+        <form (ngSubmit)="onSubmit()" #signupForm="ngForm" class="signup-form">
+          <h2 class="form-title">Create account</h2>
+          <div class="form-group">
+            <input type="text" class="form-input" name="name" [(ngModel)]="user.name" placeholder="Your Name" required/>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" name="email" [(ngModel)]="user.email" placeholder="Your Email" required/>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-input" name="password" [(ngModel)]="user.password" placeholder="Password" required/>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-input" name="re_password" [(ngModel)]="user.re_password" placeholder="Repeat your password" required/>
+          </div>
+          <div class="form-group">
+            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" [(ngModel)]="user.agree" required/>
+            <label for="agree-term" class="label-agree-term">I agree to the <a href="#" class="term-service">Terms of service</a></label>
+          </div>
+          <div class="form-group">
+            <input type="submit" class="form-submit" value="Sign up"/>
+          </div>
+        </form>
+        <p class="loginhere">
+          Have already an account? <a href="/login" class="loginhere-link">Login here</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
