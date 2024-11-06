@@ -1,0 +1,22 @@
+<div class="form-container">
+  <h2>Add Placement Details</h2>
+
+  <form [formGroup]="placementForm" (ngSubmit)="onSubmit()">
+    <label for="companyName">Company Name:</label>
+    <input id="companyName" formControlName="companyName" type="text" required>
+
+    <label for="jobRole">Job Role:</label>
+    <input id="jobRole" formControlName="jobRole" type="text" required>
+
+    <label for="salary">Salary:</label>
+    <input id="salary" formControlName="salary" type="number" required>
+
+    <label for="location">Location:</label>
+    <input id="location" formControlName="location" type="text" required>
+
+    <label for="jobDescription">Job Description:</label>
+    <textarea id="jobDescription" formControlName="jobDescription" required></textarea>
+
+    <button type="submit" [disabled]="placementForm.invalid">Submit</button>
+  </form>
+</div>

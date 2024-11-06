@@ -1,0 +1,15 @@
+<div class="student-container">
+  <h2>Available Placement Opportunities</h2>
+
+  <div *ngIf="placements.length === 0">
+    <p>No placements available at the moment.</p>
+  </div>
+
+  <div *ngFor="let placement of placements" class="placement-card">
+    <h3>{{ placement.companyName }}</h3>
+    <p><strong>Job Role:</strong> {{ placement.jobRole }}</p>
+    <p><strong>Salary:</strong> {{ placement.salary }}</p>
+    <p><strong>Location:</strong> {{ placement.location }}</p>
+    <p><strong>Description:</strong> {{ placement.jobDescription }}</p>
+  </div>
+</div>

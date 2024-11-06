@@ -1,0 +1,97 @@
+
+
+  body {
+    font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6A11CB, #2575FC);
+  background-image:url("https://img.freepik.com/free-photo/blue-surface-with-study-tools_23-2147864592.jpg");
+  background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .signup-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .signup-container label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+  }
+
+  .signup-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  .signup-container input:focus {
+    border-color: #2575FC;
+    outline: none;
+  }
+
+  .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  button {
+    width: 100%;
+    background-color: #2575FC;
+    color: #fff;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1a62d7;
+  }
+
+  .signup-container p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .signup-container p a {
+    color: #2575FC;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .signup-container p a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .signup-container {
+      padding: 30px;
+    }
+  }
+
